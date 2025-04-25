@@ -1,0 +1,72 @@
+/* style.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#glyphCanvas {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#controls label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#controls input[type="range"] {
+    width: 150px;
+    margin-top: 5px;
+}
+
+input[type="text"] {
+    padding: 8px 12px;
+    font-size: 1em;
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
