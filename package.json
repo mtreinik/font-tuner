@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
   "dependencies": {
     "opentype.js": "^1.3.4",
     "vite": "^6.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   }
 }
