@@ -29,6 +29,12 @@ interface Path {
   bezierCurveTo(cp1x: number, cp1y: number, cp2x: number, cp2y: number, x: number, y: number): void
 }
 
+export function f(obj: Object) {
+  return `(${Object.keys(obj)
+    .map((key) => `${key}=` + (typeof obj[key] === 'number' ? obj[key].toFixed(2) : obj[key]))
+    .join(', ')})`
+}
+
 function approximateArc(
   cx: number,
   cy: number,
@@ -37,7 +43,7 @@ function approximateArc(
   endAngle: number,
   clockwise: boolean
 ): BezierSegment[] {
-  console.log(`approximateArc ${JSON.stringify({ cx, cy, r, startAngle, endAngle, clockwise })}`)
+  console.log(`approximateArc ${f({ cx, cy, r, startAngle, endAngle, clockwise })}`)
 
   let delta = endAngle - startAngle
 

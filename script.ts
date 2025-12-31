@@ -7,7 +7,7 @@ interface FontParams {
   terminalRatio: number
   cornerRatio: number
   waistLength: number
-  fontStress: number
+  verticalStress: number
 }
 
 function getInputValue(id: string): number {
@@ -26,7 +26,7 @@ function getParams(): FontParams {
     terminalRatio: getInputValue('terminalRatio'),
     cornerRatio: getInputValue('cornerRatio'),
     waistLength: getInputValue('waistLength'),
-    fontStress: getInputValue('fontStress')
+    verticalStress: getInputValue('verticalStress')
   }
 }
 
@@ -92,7 +92,7 @@ const controls = [
   'terminalRatio',
   'cornerRatio',
   'waistLength',
-  'fontStress',
+  'verticalStress',
   'inputNumber'
 ]
 
